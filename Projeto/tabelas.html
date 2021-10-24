@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Formatação de tabelas</title>
+    </head>
+    <body>
+        <!-- Criação de tabelas -->
+        <table>
+            <!-- Coluna de titulo-->
+            <tr>
+                <th></th>
+                <th scope="col">Coluna 1</th>
+                <th scope="col">Coluna 2</th>
+            </tr>
+            <!-- Coluna de conteudo-->
+            <tr>
+                <th scope="row">Titulo da Linha1</th>
+                <td>Conteudo</td>
+                <td>Conteudo</td>
+            </tr>
+            <tr>
+                <th scope="row">Titulo da Linha2</th>
+                <td>Conteudo</td>
+                <td>Conteudo</td>
+            </tr>
+            <!-- Mesclar coluna-->
+            <tr>
+                <th scope="row">Titulo da Linha3</th>
+                <td colspan="2">Conteudo_Mesclado</td>
+            </tr>
+            <!-- Mesclar Linha-->
+            <tr>
+                <th scope="row">Titulo da Linha5</th>
+                <td rowspan="2">Conteudo</td>
+                <td>Conteudo</td>
+            </tr>
+            <tr>
+                <th scope="row">Titulo da Linha6</th>
+                <td>Conteudo</td>
+            </tr>
+        </table>
+        <hr />
+        <!-- Forma de formata tabela de forma que o conteudo fique separado-->
+        <table>
+            <!-- Para declara titulo-->
+            <thead>
+                <tr>
+                    <th scope="col">Data</th>
+                    <th scope="col">Transações</th>
+                    <th scope="col">Valor</th>
+                </tr>    
+            </thead>
+            <!-- Para declara conteudo-->
+            <tbody>
+                <tr>
+                    <th scope="row">06/04/1999</th>
+                    <td> 1 </td>
+                    <td>R$0,0</td>
+                </tr>
+                <th scope="row">17/03/2000</th>
+                <td> 1 </td>
+                <td>R$1000000000000,0</td>
+            </tr>
+            </tbody>
+            <!-- Para declara Resultado-->
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td>2</td>
+                    <td>R$00</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr />
+        <!-- Forma obsoletade formatar largura e espaçamento em uma tabela-->
+        <table width="400" cellpadding="10" cellspacing="5">
+            <tr>
+                <th></th>
+                <th scope="col">Coluna 1</th>
+                <th scope="col">Coluna 2</th>
+            </tr>
+            <tr>
+                <th scope="row">Titulo da Linha1</th>
+                <td>Conteudo</td>
+                <td>Conteudo</td>
+            </tr>
+            <tr>
+                <th scope="row">Titulo da Linha2</th>
+                <td>Conteudo</td>
+                <td>Conteudo</td>
+            </tr>
+        </table>
+        <hr />
+        <!-- Forma obsoletade formatar borda e fundo em uma tabela-->
+        <table border="2" bgcolor="#efefef">
+            <tr>
+                <th width="150px"></th>
+                <th scope="col">Coluna 1</th>
+                <th scope="col" width="150px" bgcolor="#cccccc">Coluna 2</th>
+            </tr>
+            <tr>
+                <th scope="row">Titulo da Linha1</th>
+                <td>Conteudo</td>
+                <td width="150px" bgcolor="#cccccc">Conteudo</td>
+            </tr>
+            <tr>
+                <th scope="row">Titulo da Linha2</th>
+                <td>Conteudo</td>
+                <td width="150px" bgcolor="#cccccc">Conteudo</td>
+            </tr>
+        </table>
+    </body>
+</html>

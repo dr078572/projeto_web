@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Formatos de Formularios</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <!--Para criar formulario e para onde as informações são enviadas-->
+        <!-- method get para pesquisa e post parta envio de arquivo e dados sigilosos-->
+        <form action="http://www.example.com.br/login.php" method="get">
+            <p>teste</p>
+        </form>
+        <hr />
+        <form action="file:///C:/Users/dr078/Desktop/web/Projeto/arquivo" >
+            <!-- Tipos de input-->
+            <!--Para colocar um user name o entrada de texto-->
+            <p>Username:
+                <input type="text" name="username" size="15" maxlength="30" />
+            </p>
+            <!--Para colocar senha-->
+            <p>Password:
+                <input type="password" name="password" size="15" maxlength="30" />
+            </p>
+            <!-- Caixa de texto-->
+            <textarea name="comentario" cols="20" rows="4">Entre com o comentário</textarea><br />
+            <!-- Tipos de input com seleção pre-programadas-->
+            <input type="radio" name="genero" value="rock" checked="checked" />rock
+            <input type="radio" name="genero" value="funk" /> funk
+            <input type="radio" name="genero" value="jazz"/>jazz<br />
+            <input type="checkbox" name="servico" value="spotify" checked="checkbox" />spotify
+            <input type="checkbox" name="servico" value="itunes" /> ITunes
+            <input type="checkbox" name="servico" value="youtubemusic" /> youtube music<br />
+            <select name="periferico">
+                <option value="celular">celular</option>
+                <option value="radio">radio</option>
+                <option	value="tv">tv</option>
+            </select><br />
+            <select name="instrumento" size="3" multiple="multiple">
+                <option value="guitar" selected="selected">guitar</option>
+                <option value="pandeiro">pandeiro</option>
+                <option	value="tambo">tambo</option>
+            </select><br />
+            <!--Botão de envio-->
+            <input type="submit" name="subscribe" value="Enviar" /><br />
+        </form>
+        <hr />
+        <form action="file:///C:/Users/dr078/Desktop/web/Projeto/arquivo" method="get">
+            <!--Adicionar arquivo-->
+            <input type="file" name="arquivo" /><br />
+            <!-- botao de envio com imagem-->
+            <input type="image" name="imagem" src="imagem/foca.jpg" width="100" height="20" /><br />
+            <!-- TAG para melhor controle de botoes-->
+            <button><img src="imagem/foca.gif" alt="add" width="200" height="100" />ADD</button>
+            <!-- Para envia da onde o dado e enviado-->
+            <input type="hidden" name="enviardados" value="dados" />
+
+        </form>
+    </body>
+</html>
