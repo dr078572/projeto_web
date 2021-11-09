@@ -50,10 +50,40 @@
             <!-- botao de envio com imagem-->
             <input type="image" name="imagem" src="imagem/foca.jpg" width="100" height="20" /><br />
             <!-- TAG para melhor controle de botoes-->
-            <button><img src="imagem/foca.gif" alt="add" width="200" height="100" />ADD</button>
+            <button><img src="imagem/foca.jpg" alt="add" width="100" height="100" />ADD</button>
             <!-- Para envia da onde o dado e enviado-->
             <input type="hidden" name="enviardados" value="dados" />
-
+        </form>
+        <hr />
+        <!-- label e usada para identificação dos formularios-->
+        <form>
+            <label>idade <input name="idade" type="text"/></label>
+            <br />
+            <input type="radio" id="mulher" name="genero" value="M" />
+            <label for="mulher">Mulher</label>
+            <input type="radio" id="homem"  name="genero" value="h" />
+            <label for="homem">Homem</label>
+        </form>
+        <hr />
+        <form>
+            <!-- Para criar uma caixa em volta dor formularios-->
+            <fieldset>
+                <legend>Contato</legend>
+                <label>E-mail: <br />
+                <input type="text" name="email" /> </label><br />
+                <label>Celular: <br />
+                <input type="text" name="celular" /></label><br />
+                <label>Telefone: <br />
+                <input type="text" name="telefone"></label><br />
+            </fieldset> 
+        </form>
+        <hr />
+        <form>
+            <legend>Login</legend>
+            <!-- Para informa que obrigatorio preenche o camnpo vazio-->
+            <label>Username: <input type="text" name="username" required /> </label><br />
+            <label>Senha: <input type="password" name="senha" required /></label><br />
+            <input type="submit" name="login" value="login">
         </form>
     </body>
 </html>
